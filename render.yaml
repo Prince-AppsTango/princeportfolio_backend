@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mywebsite-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
