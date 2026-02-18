@@ -15,15 +15,25 @@ app.use(
 
 app.use(express.json());
 
-// Helper function to convert chunk objects to text
+// Helper function to convert chunk objects to text - includes ALL fields
 function chunkToText(chunk) {
-  if (chunk.content) {
-    return chunk.content;
+  const parts = [];
+
+  const skipFields = new Set(["id", "type", "category"]);
+
+  for (const [key, value] of Object.entries(chunk)) {
+    if (skipFields.has(key)) continue;
+    
+    if (Array.isArray(value)) {
+      parts.push(`${key}: ${value.join(", ")}`);
+    } else if (typeof value === "object" && value !== null) {
+      parts.push(`${key}: ${JSON.stringify(value)}`);
+    } else if (value) {
+      parts.push(`${key}: ${value}`);
+    }
   }
-  if (chunk.items) {
-    return `${chunk.category || chunk.type}: ${chunk.items.join(", ")}`;
-  }
-  return JSON.stringify(chunk);
+  
+  return parts.join(" | ");
 }
 
 // Cosine Similarity
@@ -85,15 +95,6 @@ app.post("/chat", async (req, res) => {
     .slice(0, 5);
 
   const context = matches.map((m) => m.text).join("\n\n");
-
-  console.log(
-    "Top matches:",
-    matches.map((m) => ({
-      score: m.score.toFixed(3),
-      preview: m.text.substring(0, 50),
-    })),
-  );
-
   // Generate answer from llama3
   const response = await axios.post("http://localhost:11434/api/generate", {
     model: "llama3",
