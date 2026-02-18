@@ -1,0 +1,120 @@
+{
+  "candidate": {
+    "name": "Prince Kumar Yadav",
+    "location": "Titagarh, Kolkata, India",
+    "phone": "9330955959",
+    "email": "princekumary271@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/prince-yadav-6384b7201",
+    "experience_years": "4+",
+    "primary_role": "Front-End & Mobile App Developer"
+  },
+  "cvChunks": [
+    {
+      "id": "chunk_1_objective",
+      "type": "summary",
+      "content": "Experienced Front-End Developer specializing in React and React Native. Passionate about building responsive web and mobile applications, optimizing performance, and creating seamless user experiences."
+    },
+    {
+      "id": "chunk_2_experience",
+      "type": "experience",
+      "company": "Ogma IT Conceptions Pvt Ltd",
+      "role": "App + Front-End Developer",
+      "duration": "01/2022 - Present",
+      "content": "4+ years of experience building scalable applications using React and React Native for web and mobile platforms. Experienced in full development lifecycle."
+    },
+    {
+      "id": "chunk_3_skills_programming",
+      "type": "skills",
+      "category": "Programming Languages",
+      "items": ["Kotlin", "Dart", "JavaScript", "TypeScript"]
+    },
+    {
+      "id": "chunk_4_skills_frameworks",
+      "type": "skills",
+      "category": "Frameworks",
+      "items": ["React", "React Native", "Flutter"]
+    },
+    {
+      "id": "chunk_5_skills_libraries",
+      "type": "skills",
+      "category": "Libraries & Tools",
+      "items": [
+        "Redux Toolkit",
+        "Redux Saga",
+        "RTK Query",
+        "Jetpack Compose",
+        "Axios",
+        "Bloc",
+        "Retrofit",
+        "Dio",
+        "Hilt",
+        "Firebase",
+        "Agora",
+        "Socket.io",
+        "RevenueCat"
+      ]
+    },
+    {
+      "id": "chunk_6_project_sanjeevani",
+      "type": "project",
+      "name": "Sanjeevani",
+      "tech": ["React Native", "Redux", "Redux-Saga", "Firebase", "Agora", "Socket.io"],
+      "features": [
+        "Appointment scheduling",
+        "Chat and video consultation",
+        "Live session hosting with Agora",
+        "Android native experience"
+      ]
+    },
+    {
+      "id": "chunk_7_project_snappi",
+      "type": "project",
+      "name": "Snappi",
+      "tech": ["React Native", "Redux Toolkit", "Socket.io", "Firebase"],
+      "features": [
+        "Taxi booking system",
+        "Real-time tracking",
+        "Driver matching",
+        "Payment and rating system"
+      ]
+    },
+    {
+      "id": "chunk_8_project_iconcal",
+      "type": "project",
+      "name": "IconCal",
+      "tech": ["Flutter", "SQLite", "Google Calendar API", "RevenueCat"],
+      "features": [
+        "Icon-based event management",
+        "Google & iOS calendar sync",
+        "OAuth2 authentication",
+        "Premium subscription model",
+        "Local notification scheduling"
+      ]
+    },
+    {
+      "id": "chunk_9_project_oneword",
+      "type": "project",
+      "name": "OneWord",
+      "tech": ["Kotlin", "Jetpack Compose", "MVVM", "Room", "WorkManager", "AlarmManager"],
+      "features": [
+        "NotificationListenerService",
+        "Background sync pipeline",
+        "Room database integration",
+        "AdMob & RevenueCat monetization",
+        "Firebase Crashlytics"
+      ]
+    },
+    {
+      "id": "chunk_10_education",
+      "type": "education",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "university": "Regent Education And Research Foundation",
+      "duration": "2017 - 2021"
+    },
+    {
+      "id": "chunk_11_languages",
+      "type": "languages",
+      "items": ["Hindi (Fluent)", "English (Conversational)"]
+    }
+  ]
+}
